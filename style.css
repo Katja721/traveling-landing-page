@@ -1,0 +1,698 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+.icon {
+  width: 10%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0rem;
+  background-color: #fdbb3f;
+}
+h1 {
+  color: #0a0700;
+  font-size: 3.5em;
+}
+.heading_header p {
+  color: #7c5304;
+  font-size: 1.5em;
+}
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1.7fr 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 15px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". heading heading ."
+    "features features features features";
+  background-image: url(images/wallpaper-4839630.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  text-align: center;
+  padding: 0rem 0rem 4rem 0rem;
+  margin: 0;
+}
+.nav-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 15px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "logo . . nav";
+  background-color: rgba(253, 187, 63, 90%);
+  padding: 0.5rem 2rem;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+.nav {
+  justify-self: center;
+  align-self: center;
+  grid-area: nav;
+  display: flex;
+  list-style: none;
+  width: max-content;
+}
+.logo {
+  grid-area: logo;
+  width: 7rem;
+}
+.navText {
+  margin: 0.5rem 2rem 0rem 1rem;
+}
+.hamburgerIcon {
+  display: none;
+}
+.heading_header {
+  align-self: center;
+  grid-area: heading;
+}
+.heading_header button {
+  background-color: #a26a02;
+  color: #0a0700;
+  border: #0a0700 solid 4px;
+  border-radius: 40px;
+  padding: 0.5rem 3rem;
+  font-size: 1.5em;
+}
+/* .heading_header button:hover {
+  box-shadow: 13px 13px 26px #e1a638, -13px -13px 26px #ffd046;
+  cursor: pointer;
+} */
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "explore adventereus hotels response";
+  grid-area: features;
+  font-weight: 600;
+  margin: 0rem 0rem 6rem 0rem;
+}
+
+.explore {
+  justify-self: center;
+  align-self: center;
+  grid-area: explore;
+  background-color: #fff1d7;
+  border-radius: 50%;
+  height: 8rem;
+  width: 8rem;
+  padding: 2rem 2rem;
+}
+/* .explore:hover {
+  box-shadow: -7px 7px 14px #d29b34, 7px -7px 14px #ffdb4a;
+  cursor: pointer;
+} */
+.explore img {
+  width: 38%;
+}
+
+.adventereus {
+  justify-self: center;
+  align-self: center;
+  grid-area: adventereus;
+  background-color: #fff1d7;
+  border-radius: 50%;
+  height: 8rem;
+  width: 8rem;
+  padding: 2rem 2rem;
+}
+/* .adventereus:hover {
+  box-shadow: -7px 7px 14px #d29b34, 7px -7px 14px #ffdb4a;
+  cursor: pointer;
+} */
+.adventereus img {
+  width: 38%;
+}
+.hotels {
+  justify-self: center;
+  align-self: center;
+  grid-area: hotels;
+  background-color: #fff1d7;
+  border-radius: 50%;
+  height: 8rem;
+  width: 8rem;
+  padding: 2rem 2rem;
+}
+/* .hotels:hover {
+  box-shadow: -7px 7px 14px #d29b34, 7px -7px 14px #ffdb4a;
+  cursor: pointer;
+} */
+.hotels img {
+  width: 38%;
+}
+
+.response {
+  justify-self: center;
+  align-self: center;
+  grid-area: response;
+  background-color: #fff1d7;
+  border-radius: 50%;
+  height: 8rem;
+  width: 8rem;
+  padding: 2rem 2rem;
+}
+/* .response:hover {
+  box-shadow: -7px 7px 14px #d29b34, 7px -7px 14px #ffdb4a;
+  cursor: pointer;
+} */
+.response img {
+  width: 38%;
+}
+.contact {
+  background-color: #fdbb3f;
+  border: 2px solid #0a0700;
+  border-radius: 40px;
+  color: #0a0700;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+}
+/* .contact :hover {
+  box-shadow: -7px 7px 14px #d29b34, 7px -7px 14px #ffdb4a;
+  cursor: pointer;
+} */
+/* .aboutUs {
+  background-image: url(images/people-2591874_1920.jpg);
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+} */
+/*/* Ellipse 8 */
+
+/*position: absolute;
+width: 487px;
+height: 506px;
+left: 807px;
+top: 1146px;
+
+background: url(people-2591874_1920.jpg);
+*/
+/* */
+main {
+  background-color: rgba(10, 7, 0, 90%);
+}
+.image {
+  height: 15rem;
+  width: 15rem;
+  background-image: url(images/people-2591874_1920.jpg);
+  border-radius: 50%;
+  display: inline-block;
+  background-size: cover;
+}
+.aboutUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0 0 0;
+  margin: 0 0 12rem 0;
+}
+.text {
+  width: 45%;
+  color: #fff1d7;
+  font-size: 1.5rem;
+  width: 33%;
+  margin: 0rem 10rem 0rem 0rem;
+}
+.aboutUs h2 {
+  color: #a26a02;
+  font-size: 4rem;
+}
+h2.watermark_about {
+  position: absolute;
+  left: 12rem;
+  top: 52rem;
+  font-size: 8rem;
+  opacity: 0.1;
+}
+.destinations h2 {
+  color: #fff1d7;
+  font-size: 3rem;
+  margin: 0 0 4rem 4rem;
+}
+.newZelandImage {
+  height: 20rem;
+  width: 20rem;
+  background-image: url(images/new-zealand-4631622_1280.jpg);
+  border-radius: 50%;
+  display: inline-block;
+  background-size: cover;
+  border: 2px solid #3fe1fd;
+}
+.newZeland {
+  color: #fff1d7;
+  margin: 0 0 12rem 0;
+}
+.watermark_plane {
+  font-size: 20rem;
+  position: absolute;
+  left: 60rem;
+  top: 117rem;
+  transform: rotate(-25deg);
+  opacity: 0.1;
+  color: #3fe1fd;
+}
+.newZelandTxtImage {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.newZelandTxtImage p {
+  width: 46.5%;
+  font-size: 1.4em;
+  line-height: 1.8em;
+}
+.newZeland h3 {
+  margin: 2rem 8rem;
+  color: #3fe1fd;
+  font-size: 2.5em;
+}
+.nepalImage {
+  height: 20rem;
+  width: 20rem;
+  background-image: url(images/BhaktapurDurbar_square_._Bhaktapur_Kathmandu_Nepall_Visit_Nepal.jpg);
+  border-radius: 50%;
+  display: inline-block;
+  background-size: cover;
+  border: 2px solid #fdbb3f;
+}
+.watermark_suitcase {
+  position: absolute;
+  top: 160rem;
+  left: -2rem;
+  width: 20%;
+}
+.nepalTxtImage {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nepalTxtImage p {
+  width: 51%;
+  font-size: 1.4em;
+  line-height: 1.8em;
+}
+.nepal h3 {
+  margin: 0rem 5rem;
+  color: #fdbb3f;
+  font-size: 2.5em;
+}
+.nepal {
+  color: #fff1d7;
+  margin: 0 0 12rem 0;
+}
+.norwayImage {
+  height: 20rem;
+  width: 20rem;
+  background-image: url(images/norway-4766392_1920.jpg);
+  border-radius: 50%;
+  display: inline-block;
+  background-size: cover;
+  border: 2px solid #a1fd3f;
+}
+.norwayTxtImage {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.norwayTxtImage p {
+  width: 50%;
+  font-size: 1.4rem;
+  font-size: 1.4em;
+  line-height: 1.8em;
+}
+.norway h3 {
+  margin: 2rem 10rem;
+  color: #a1fd3f;
+  font-size: 2.5em;
+}
+.norway {
+  color: #fff1d7;
+  padding: 0 0 25rem 0;
+}
+.watermark_compass {
+  font-size: 17rem;
+  position: absolute;
+  left: 65rem;
+  top: 204rem;
+  opacity: 0.1;
+  color: #a1fd3f;
+}
+.wave {
+  position: absolute;
+  top: 216rem;
+  left: 0rem;
+}
+
+footer {
+  position: relative;
+  top: -13rem;
+  left: 0rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "contactUs newsettler";
+  background-color: #fdbb3f;
+  padding: 3rem 3rem 0rem 3rem;
+}
+
+.contactUs {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "heading"
+    "form";
+  grid-area: contactUs;
+}
+
+.heading {
+  grid-area: heading;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "name email"
+    "message message";
+  grid-area: form;
+}
+.form p {
+  font-weight: 600;
+}
+.name {
+  grid-area: name;
+}
+
+.email {
+  grid-area: email;
+}
+
+.message {
+  grid-area: message;
+}
+.message input {
+  width: 84%;
+  height: 80%;
+}
+.newsettler {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "heading2"
+    "checkEmail"
+    "social";
+  grid-area: newsettler;
+  justify-items: center;
+}
+.newsettler input {
+  margin: 0.5rem 0rem 2rem 2rem;
+}
+
+.heading2 {
+  grid-area: heading2;
+}
+
+.checkEmail {
+  grid-area: checkEmail;
+}
+
+.social {
+  grid-area: social;
+}
+.social ion-icon {
+  margin: 0rem 0rem 0rem 2rem;
+  font-size: 3em;
+}
+.submitButton {
+  background: none;
+  border: none;
+}
+
+.menu {
+  grid-area: menu1;
+  justify-self: end;
+}
+.menu h3 {
+  margin: 0rem 1.7rem 1rem 1.7rem;
+}
+
+ion-icon {
+  font-size: 2rem;
+  margin: -0.3em 0rem;
+  color: #0a0700;
+}
+.newsettler ion-icon:hover {
+  color: #a26a02;
+  cursor: pointer;
+}
+li:hover {
+  color: #a26a02;
+  cursor: pointer;
+}
+button.contact:hover {
+  color: #a26a02;
+  border: 2px solid #a26a02;
+}
+.error:hover {
+  color: #fd3f82;
+  cursor: auto;
+}
+.email button {
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  background: none;
+}
+.email h3 {
+  color: #0a0700;
+}
+.email p {
+  color: #0a0700;
+}
+input {
+  color: #a26a02;
+  margin: 0.5rem 0rem 2rem 0rem;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+}
+.submit {
+  color: #a26a02;
+}
+.error {
+  color: #fd3f82;
+  position: relative;
+  left: -5rem;
+}
+.hidden {
+  display: none;
+}
+p.errorParagraph {
+  position: relative;
+  left: 2rem;
+  color: #fd3f82;
+  font-weight: 700;
+  margin: -1rem 0;
+}
+.next {
+  display: none;
+}
+.back {
+  display: none;
+}
+.mobile {
+  display: none;
+}
+.hidden {
+  display: none;
+}
+@media screen and (max-width: 400px) {
+  header {
+    grid-template-rows: 0.1fr 1fr 1fr;
+    background-image: url(images/wallpaperMobile.jpg);
+    background-position-x: center;
+    padding: 1rem;
+  }
+  .hamburgerIcon {
+    display: initial;
+    height: 6rem;
+    width: 2rem;
+  }
+  .closeIcon {
+    height: 6rem;
+    width: 2rem;
+  }
+  .heading {
+    justify-self: stretch;
+  }
+  .heading_header {
+    font-size: 0.6em;
+  }
+
+  .features {
+    padding: 0 2rem;
+  }
+  .feature {
+    position: absolute;
+    top: 27rem;
+    left: 6rem;
+  }
+  .active {
+    display: initial;
+  }
+  .aboutUs {
+    flex-direction: column-reverse;
+  }
+  h2.watermark_about {
+    left: 1rem;
+    top: 67rem;
+    font-size: 6rem;
+    opacity: 0.05;
+  }
+  .text {
+    width: 90%;
+    margin: 0;
+  }
+  .text p {
+    font-size: 0.8em;
+    text-align: center;
+  }
+  .destinations h2 {
+    font-size: 2.5rem;
+    margin: 0 0 4rem 1rem;
+    text-align: center;
+  }
+  .newZelandTxtImage {
+    flex-direction: column;
+  }
+  .newZelandTxtImage p {
+    width: 80%;
+    font-size: 1.3em;
+    line-height: 1.6em;
+    text-align: center;
+  }
+  .newZeland h3 {
+    margin: 2rem 3rem;
+    text-align: center;
+  }
+  .nepalTxtImage {
+    flex-direction: column-reverse;
+  }
+  .nepalTxtImage p {
+    width: 80%;
+    font-size: 1.3em;
+    line-height: 1.6em;
+    text-align: center;
+  }
+  .nepal h3 {
+    margin: 2rem 3rem;
+    text-align: center;
+  }
+  .norwayTxtImage {
+    flex-direction: column;
+  }
+  .norwayTxtImage p {
+    width: 80%;
+    font-size: 1.3em;
+    line-height: 1.6em;
+    text-align: center;
+  }
+  .norway h3 {
+    margin: 2rem 3rem;
+    text-align: center;
+  }
+  .contact {
+    white-space: nowrap;
+  }
+  .next {
+    display: block;
+    position: relative;
+    top: 9.5rem;
+    left: 11rem;
+  }
+  .back {
+    display: block;
+    position: relative;
+    top: 9.5rem;
+    left: -5rem;
+  }
+  .hiddenMobile {
+    display: none;
+  }
+  .features {
+    margin: 0 3rem;
+  }
+  .wave {
+    top: 307rem;
+  }
+  .form {
+    grid-template-areas: "name" " email" "message";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.1fr 1fr;
+  }
+  footer {
+    grid-template-areas: "contactUs " "newsettler";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  input {
+    margin: 0;
+    width: 84%;
+  }
+  .message {
+    margin: 0 0 6rem 0;
+  }
+  .newsettler {
+    justify-items: left;
+  }
+  .newsettler input {
+    margin: 0.5rem 0rem 2rem 0rem;
+    width: 69%;
+  }
+  .social ion-icon {
+    margin: 0rem 0rem 0rem 1rem;
+    font-size: 2em;
+  }
+  .navMobile {
+    position: absolute;
+    background-color: #fdbb3f;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0 6rem 0;
+    top: 5rem;
+  }
+  button.navItem {
+    background-color: #7c5304;
+    margin: 2rem 0 0 0;
+  }
+  .navItem {
+    font-weight: 700;
+  }
+  .mobile {
+    display: initial;
+  }
+  .hidden {
+    display: none;
+  }
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="/style.css" />
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="" /> -->
+
+    <title>Traveling landing page</title>
+  </head>
+  <body>
+    <div class="nav-box">
+      <img src="/images/logo.svg" class="logo" />
+      <ion-icon name="menu-outline" class="hamburgerIcon nav"></ion-icon>
+      <ion-icon name="close-outline" class="closeIcon nav hidden"></ion-icon>
+      <div class="navMobile mobile hidden">
+        <p class="navItem">Home</p>
+        <p class="navItem">About us</p>
+        <p class="navItem">Top destinations</p>
+        <button class="navItem contact">CONTACT US</button>
+      </div>
+      <ul class="nav hiddenMobile">
+        <li class="navText"><a>Home</a></li>
+        <li class="navText"><a>About us</a></li>
+        <li class="navText"><a>Top destinations</a></li>
+        <li><button class="contact">CONTACT US</button></li>
+      </ul>
+    </div>
+    <header>
+      <div class="heading_header">
+        <h1>Greatest Adventures</h1>
+        <p>Travle the world to create greatest stories</p>
+        <button>Learn More</button>
+      </div>
+      <div class="features">
+        <ion-icon name="arrow-back-circle" class="back"></ion-icon>
+        <div class="explore feature0 feature">
+          <img src="images/around.png" class="icon" />
+          <p>EXPLORE THE WORLD</p>
+        </div>
+        <div class="adventereus feature1 feature hidden">
+          <img src="images/camping.svg" class="icon" />
+          <p>ADVENTEREUS VACATIONS</p>
+        </div>
+        <div class="hotels feature2 feature hidden">
+          <img src="images/hotel.svg" class="icon" />
+          <p>BEST HOTELS</p>
+        </div>
+        <div class="response feature3 feature hidden">
+          <img src="images/quick-response.svg" class="icon" />
+          <p>QUICK RESPONSE</p>
+        </div>
+        <ion-icon name="arrow-forward-circle" class="next"></ion-icon>
+      </div>
+    </header>
+    <main>
+      <section class="aboutUs">
+        <!-- <img src="images/people-2591874_1920.jpg" /> -->
+        <div class="text">
+          <h2 class="watermark_about">ABOUT</h2>
+          <h2>ABOUT US</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et
+            augue dignissim, aliquet est quis, auctor nunc. Donec commodo risus
+            egestas interdum blandit. Sed lectus augue, venenatis sit amet
+            cursus ut, pellentesque sit amet arcu. Pellentesque pellentesque
+            laoreet mi sed semper.
+          </p>
+        </div>
+        <div class="image"></div>
+      </section>
+      <section class="destinations">
+        <h2>OUR TOP DESTINATIONS</h2>
+        <section class="newZeland">
+          <h3>New Zeland</h3>
+          <div class="newZelandTxtImage">
+            <div class="newZelandImage"></div>
+            <ion-icon
+              name="airplane-outline"
+              class="watermark_plane"
+            ></ion-icon>
+            <p>
+              The land of the long white cloud, is famous for its breathtaking
+              landscapes, from lofty mountain peaks and glaciers to mesmerizing
+              blue lakes. Also it is known for its wine, lupins and rugby. As
+              well as its adventure activities and its gorgeous train journeys.
+            </p>
+          </div>
+        </section>
+        <section class="nepal">
+          <h3>Nepal</h3>
+          <div class="nepalTxtImage">
+            <img src="/images/suitcase-1835.svg" class="watermark_suitcase" />
+            <p>
+              Nepal has a diverse geography, including fertile plains, subalpine
+              forested hills, and eight of the world's tallest mountains,
+              including Mount Everest, the highest point on Earth. Nepal is a
+              multi-ethnic, multi-lingual, multi-religious and multi-cultural
+              state, its official language is Nepali.
+            </p>
+            <div class="nepalImage"></div>
+          </div>
+        </section>
+        <section class="norway">
+          <h3>Norway</h3>
+          <div class="norwayTxtImage">
+            <div class="norwayImage"></div>
+            <ion-icon
+              name="compass-outline"
+              class="watermark_compass"
+            ></ion-icon>
+            <p>
+              Land of the Midnight Sun is famous for its phenomenal fjords,
+              lakes and magical skies. Norway is also famous for its languages,
+              Vikings and folklore, being eco-friendly, and oil production.
+              Also, many inhabitants of Norway are renowned ski fanatics, frozen
+              pizza lovers, and Tesla drivers!
+            </p>
+          </div>
+        </section>
+      </section>
+    </main>
+    <img src="/images/wave.svg" class="wave" />
+
+    <footer>
+      <div class="contactUs">
+        <div class="heading">Contact us</div>
+        <div class="form">
+          <div class="name">
+            <p>Name</p>
+            <input type="text" />
+          </div>
+          <div class="email">
+            <p>E-mail</p>
+            <input type="email" />
+          </div>
+          <div class="message">
+            <p>Message</p>
+            <input type="text" />
+          </div>
+        </div>
+      </div>
+      <div class="newsettler">
+        <div class="heading2">
+          <h3>Newsletter</h3>
+          <p>Subscribe for offers and updates</p>
+        </div>
+        <div class="checkEmail">
+          <input type="email" placeholder="Please enter valid e-mail" />
+          <button class="submitButton">
+            <ion-icon
+              name="arrow-forward-circle"
+              class="submit"
+            ></ion-icon></button
+          ><ion-icon name="alert-circle" class="error hidden"></ion-icon>
+          <p class="errorParagraph hidden">Please enter a valid e-mail</p>
+          <br />
+        </div>
+        <div class="social">
+          <ion-icon name="logo-instagram"></ion-icon>
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-twitter"></ion-icon>
+          <ion-icon name="logo-pinterest"></ion-icon>
+        </div>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
